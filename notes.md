@@ -17,17 +17,12 @@ Notes on progress
 * changed the constructor to set the balance to 0.0
 
 * added a test to see what happens when trying to deposit money into the account
-* there was no deposit or setBalance method, so the test failed
-* created a method which sets the balance to whatever is passed in
-* this does not do what we need, it will only set the balance to whatever is passed in, ignoring the deposit mechanism
-
-----> change setBalance to a private method and create a deposit method which will handle the calculations
-
-* got rid of setBalance and created a deposit method which adds the input value to the current account balance
+* there was no deposit method, so the test failed
+* created a deposit method which adds the input value to the current account balance
 * the tests now pass
 
 * it is now time to work on the withdraw method
-* created a test for withdrawing 80, expecting the balance to be 20.
+* created a test for withdrawing $80 (from a balance of $100), expecting the balance to be $20.
 * it failed to load because no withdraw method exists, so I created it...
 * test still fails because withdraw() is empty
 * added calculation to withdraw()
@@ -44,3 +39,6 @@ Notes on progress
 * extracted out code that was used in multiple places that might want to be adjusted or used elswhere as the account requirements change over time
 
 * did final code cleaning
+
+
+-Chris Coe, February 14, 2015
